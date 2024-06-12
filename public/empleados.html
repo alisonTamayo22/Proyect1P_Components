@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <script type="module" src="./app-header.js"></script>
+    <script type="module" src="./app-footer.js"></script>
+    <script type="module" src="./employee-table.js"></script>
+    <script type="module" src="./employee-form.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 3em; /* Espacio para el footer */
+        }
+
+        app-header, app-footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <app-header></app-header>
+    
+    <main>
+        <h2>Ingresar Empleados</h2>
+        <employee-form></employee-form>
+        <h2>Tabla de Productos</h2>
+        <employee-table></employee-table>
+    </main>
+    
+    <app-footer></app-footer>
+</body>
+</html>

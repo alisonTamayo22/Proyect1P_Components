@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Parcial 1</title>
+    <script type="module" src="./app-header.js"></script>
+    <script type="module" src="./app-footer.js"></script>
+    <script type="module" src="./api.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #content {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 3em; /* Espacio para el footer */
+        }
+
+        app-header, app-footer {
+            flex-shrink: 0;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <app-header></app-header>
+    
+    <div id="content">
+        <main>
+            <h2>Bienvenido</h2>
+            <p>Esta es la página de inicio.</p>
+            <p>Integrantes:</p>
+            <p>Merlyn Ulcuango</p>
+            <p>Alison Tamayo</p>
+        </main>
+    </div>
+    
+    <app-footer></app-footer>
+</body>
+</html>

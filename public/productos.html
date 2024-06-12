@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script type="module" src="./app-header.js"></script>
+    <script type="module" src="./app-footer.js"></script>
+    <script type="module" src="./product-table.js"></script>
+    <script type="module" src="./product-form.js"></script>
+    <script type="module" src="./api.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        app-header, app-footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <app-header></app-header>
+    
+    <main>
+        <h2>Agregar Producto</h2>
+        <product-form></product-form>
+        <h2>Tabla de Productos</h2>
+        <product-table></product-table>
+    </main>
+    
+    <app-footer></app-footer>
+</body>
+</html>
